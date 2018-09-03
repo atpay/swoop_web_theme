@@ -401,6 +401,109 @@ footer{
 }
 
 
+/* responsive */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .wrap{
+    width: 90%;
+  }
+
+  .code_block,
+  .content_block{
+      float:none !important;
+      width: 90% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      clear: both !important;
+      padding: 0 !important;
+      margin-bottom: 20px !important;
+  }
+
+  .button{
+    width: 80% !important;
+  }
+
+  #demo-tab {
+    float:none;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .busy{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 30%;
+  }
+
+  #main_navbar{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+  #main_navbar img.logo{
+    width: 125px;
+  }
+
+  #main_navbar ul{
+    float:right;
+    list-style: none;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    padding: 5px 0;
+    width: 100%;
+  }
+
+  #main_navbar ul li {
+    float:left;
+    display: block;
+    margin-left: 0px;
+    color: #ffffff;
+    padding: 5px;
+  }
+
+
+  #hero img.hero_image{
+    position: relative;
+    top: auto;
+    height: auto;
+    left: auto;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #main_navbar ul{display: none;}
+
+  .panel h2{
+    width: 100%;
+  }
+
+  #panel-1 {
+    padding-top:  130px;
+  }
+  #panel-2{
+    padding-top:  130px;
+  }
+  #panel-3 {
+    padding-top:  170px;
+  }
+
+  #panel-4 {
+    padding-top:  160px;
+  }
+
+  #hero .content_block{
+    margin-top: 90px;
+  }
+
+}
+
+
+/* misc */
 @media screen and (-webkit-min-device-pixel-ratio: 2) {
   body {
     -webkit-font-smoothing: subpixel-antialiased;
