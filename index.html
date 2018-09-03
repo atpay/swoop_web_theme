@@ -1,14 +1,162 @@
+<!doctype html>
+
 <html lang="en">
 <head>
   <meta charset="utf-8">
 
   <title>Swoopnow.com</title>
 
-  <link rel="stylesheet" href="styles.css?v=1.0">
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/rainbow/solarized-dark.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 
 </head>
 
-<body>
-  <script src="scripts.js"></script>
+<body class='gradient'>
+
+  <div id='main_navbar'>
+    <div class='wrap'>
+      <img src='images/logo_white.png' class='logo' />
+      <ul>
+        <li>How it Works</li>
+        <li>Developers</li>
+        <li>Pricing</li>
+        <li>About Us</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id='hero' class='panel gradient'>
+    <div class='wrap'>
+      <div class='content_block'>
+        <h2>Make Login Simple</h2>
+        <p>Every developer knows that easy to use applications are more likely to succeed.  So why do most applications still make it hard to sign in? Simplifying your login is one of the most important upgrades you can make to your application.  The industry is becoming more competitive, and companies that neglect to optimize their UX design will likely go out of business. Swoop is a powerful upgrade to your current password-based login.</p>
+      </div>
+      <img src="images/hero_image.png" class='hero_image' />
+    </div>
+  </div>
+
+  <section>
+    <div id='panel-1' class='panel'>
+      <div class="wrap">
+        <div class='content_block'>
+          <h2>Login By Simply Sending An Email</h2>
+
+          <p>Swoop is a login service that combines mailto technology, antispam encryption and WebSockets to provide a beautiful login experience that your users will love.  Login occurs in seconds and the user does not have to set up anything.   </p>
+
+          <ul>
+            <li> No apps to download </li>
+            <li> No special hardware needed  </li>
+            <li> No customer opt in required </li>
+          </ul>
+
+          <a href='#' class='button'> Try the demo now </a>
+        </div>
+
+      <div id='demo-tab'>
+        <input type="radio" checked name="tab" data-tab='1' id="tab1">
+        <label for="tab1">Step 1</label>
+
+        <input type="radio" name="tab" data-tab='2'  id="tab2">
+        <label for="tab2">Step 2</label>
+
+        <input type="radio" name="tab" data-tab='3' id="tab3">
+        <label for="tab3">Step 3</label>
+
+        <input type="radio" name="tab" data-tab='4' id="tab4">
+        <label for="tab4">Done!</label>
+
+        <div class="tab" data-tab='1'>
+          <img src='images/step-1.png' class="step" />
+        </div>
+        <div class="tab" data-tab='2'>
+          <img src='images/step-2.png' class="step" />
+        </div>
+        <div class="tab" data-tab='3'>
+          <img src='images/step-3.png' class="step" />
+          <img src='images/busy.svg' class="busy" />
+        </div>
+        <div class="tab" data-tab='4'>
+          <img src='images/step-4.png' class="step" />
+        </div>
+
+      </div>
+
+      <div class='clear'> </div>
+      </div>
+    </div>
+
+    <div id='panel-2' class='panel odd'>
+      <div class="wrap">
+        <div class="code_block top_35">
+          <pre>
+            <code data-language="html"><!-- load swoop.js -->
+&lt;script src=&quot;http://app.swoopnow.com/swoop.js&quot;&gt;&lt;/script&gt;
+
+<!-- configure swoop.js -->
+&lt;script type='javascript'&gt;
+      Swoop.init(&apos;wb_YOUR_WEBSITE_ID&apos;);
+&lt;/script&gt;
+
+<!-- trigger swoop.js -->
+&lt;button onClick=&quot;Swoop.open(&apos;login&apos;);&quot;&gt;Sign In&lt;/button&gt;</code></pre>
+        </div>
+        <div class='content_block'>
+          <h2>Made for Developers</h2>
+          <p>Most sites can install Swoop in under an hour. Just add Swoop.js to your webpages and write a little code that provides us a “login link” on request.</p>
+          <a href='#' class='button bottom_20'> Check out our docs</a>
+          <a href='#' class='button'> <img src='/images/github.png' class='button_icon' /> View Sample App</a>
+
+        </div>
+      <div class='clear'> </div>
+      </div>
+    </div>
+
+    <div id='panel-3' class='panel'>
+      <div class="wrap">
+        <h2>Compatibilite with all major email providers and clients</h2>
+        <img src="images/email_providers.png" class='email_providers' />
+        <hr />
+
+        <div class='content_block'>
+          <h2>Safe And Protected</h2>
+          <p>Swoop is a major security upgrade from password login. Swoop uses the 1024/2048 bit digital keys that are part of the DKIM standard to authenticate your user. This is state of the art encryption. See how it works for more details.</p>
+
+        </div>
+
+        <div class='content_block'>
+          <h2>No More Passwords!</h2>
+          <p>Good UX is about keeping it simple to use.  Swoop allows users to create accounts and login with just a few taps of their finger.  No annoying passwords to create and no keyboards to fumble around with. Pure bliss for the user means more business for you</p>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <div id='panel-4' class='panel odd straight' style="background:none;">
+      <div class="wrap">
+
+        <h2>Ready to Ditch Passwords?</h2>
+
+        <a href='#' class='button light'> Get started now!</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2018 | Swoop In Technologies
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
+  <script src="/scripts/scripts.js"></script>
+  <script src="/scripts/rainbow.js"></script>
+  <script src="/scripts/rainbow/generic.js"></script>
+  <script src="/scripts/rainbow/html.js"></script>
+  <script src="/scripts/rainbow/javascript.js"></script>
+
+
+
 </body>
 </html>
