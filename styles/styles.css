@@ -60,6 +60,9 @@ html, body{
   padding-top: 220px;
   padding-bottom: 20px;
   width: 100%;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+              0 5px 15px 0 rgba(0,0,0,0.08);
+
 }
 
 .panel.odd{
@@ -83,6 +86,12 @@ html, body{
   transform: skewY(-8deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+              0 5px 15px 0 rgba(0,0,0,0.08);
+}
+
+.no_shadow{
+  box-shadow: none;
 }
 
 .panel.gradient:after{
